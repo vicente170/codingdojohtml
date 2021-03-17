@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <form action="process.php" method="post">
+            <p>Por favor regístrese</p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+           
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido">
+           
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password">
+            <label for="pw_confirm">Confirmación de Contraseña:</label>
+            <input type="password" id="pw_confirm" name="password_confirmacion">
+
+            <label for="date">Cumpleaños:</label>
+            <input type="date" id="date" name="date">
+           
+            <p>Selecciona tu género:</p>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+           
+            <label for="femenino">Female</label>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            
+            <label for="decline">Prefiero no decir</label>
+            <input type="radio" id="decline" name="genero" value="prefiero-no-decir">
+            
+            <p>Una breve descripción de ti:</p>
+            <textarea name="descripcion"></textarea>
+
+            <label for="languages">Lenguaje Favorito:</label>
+
+                <select name="languages" id="languages">
+                    <option value="js">Javascript</option>
+                    <option value="php">PHP</option>
+                    <option value="nodejs">Nodejs</option>
+                    <option value="csharp">C#</option>
+                </select>
+                            
+           
+           <input type="submit" value="Enviar">
+        </form>
+        
+
+    </body>
+</html>
